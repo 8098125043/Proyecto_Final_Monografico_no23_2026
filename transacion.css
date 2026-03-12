@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#ff4da6;
+    color:white;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+    font-size:20px;
+    font-weight:bold;
+    color:white;
+    text-decoration:none;
+}
+
+.nav-links a{
+    margin:0 15px;
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    opacity:0.7;
+}
+
+.nav-right{
+    font-weight:bold;
+    background:white;
+    color:#ff4da6;
+    padding:5px 12px;
+    border-radius:20px;
+}
+
+.form-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+
+    background-image:url("./img1.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+.card{
+    background:rgba(255,255,255,0.75);
+    backdrop-filter:blur(12px);
+    padding:40px;
+    width:420px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(236,72,153,0.3);
+    text-align:center;
+}
+
+.card h1{
+    font-size:40px;
+    margin-bottom:10px;
+    background:linear-gradient(90deg,#be185d,#ec4899);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.card p{
+    font-size:14px;
+    margin-bottom:25px;
+    color:#831843;
+}
+
+form{
+    text-align:left;
+}
+
+label{
+    font-size:14px;
+    font-weight:500;
+    color:#831843;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:8px 0 18px 0;
+    border-radius:10px;
+    border:1px solid #f9a8d4;
+    outline:none;
+    transition:all 0.3s ease;
+    font-family:'Poppins', sans-serif;
+}
+
+input:focus{
+    border-color:#ec4899;
+    box-shadow:0 0 8px rgba(236,72,153,0.3);
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(90deg,#ec4899,#be185d);
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+
+button:hover{
+    transform:scale(1.05);
+    box-shadow:0 10px 20px rgba(236,72,153,0.4);
+}
+
+
+
+.ingreso{
+color:#16a34a;
+font-weight:bold;
+}
+
+.egreso{
+color:#dc2626;
+font-weight:bold;
+}

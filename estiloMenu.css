@@ -1,0 +1,125 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+   background-image: url("./img1.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    color: #4b004f;
+    min-height: 100vh;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #be185d;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #831843;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #ec4899;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #be185d;
+}
+
+
+.balance {
+    background: linear-gradient(90deg, #ec4899, #be185d);
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #720f38, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow: 3px 3px 0px white;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #6b214e;
+    margin-bottom: 30px;
+}
+
+
+.btn-primary {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #ec4899, #be185d);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(236, 72, 153, 0.5);
+}
