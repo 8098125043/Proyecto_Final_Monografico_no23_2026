@@ -1,0 +1,329 @@
+/* =========================
+RESET
+========================= */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+}
+
+/* =========================
+VARIABLES
+========================= */
+:root{
+--bg:#eef2f6;
+--card:#ffffff;
+--text:#1f2937;
+--soft:#6b7280;
+--primary:#468189;
+--accent:#77ACA2;
+--danger:#ef4444;
+--success:#16a34a;
+--shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* =========================
+BODY
+========================= */
+body{
+background:linear-gradient(135deg,#eef2f6,#e3e9ee);
+color:var(--text);
+}
+
+/* =========================
+LAYOUT
+========================= */
+.layout{
+display:flex;
+}
+
+/* =========================
+SIDEBAR
+========================= */
+.sidebar{
+width:250px;
+height:100vh;
+position:fixed;
+top:0;
+left:0;
+
+background:linear-gradient(180deg,#031926,#062c3b);
+color:white;
+
+padding:30px 20px;
+display:flex;
+flex-direction:column;
+
+box-shadow:5px 0 20px rgba(0,0,0,0.2);
+}
+
+/* =========================
+PERFIL (NUEVO)
+========================= */
+.perfil{
+text-align:center;
+margin-bottom:30px;
+}
+
+/* AVATAR PRO */
+.avatar{
+width:80px;
+height:80px;
+border-radius:50%;
+
+background:linear-gradient(135deg,var(--primary),var(--accent));
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:26px;
+font-weight:600;
+color:white;
+
+margin:auto;
+margin-bottom:10px;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.avatar:hover{
+transform:scale(1.08);
+}
+
+/* TEXTO PERFIL */
+.perfil h3{
+font-size:16px;
+font-weight:500;
+}
+
+.perfil p{
+font-size:12px;
+color:#9DBEBB;
+}
+
+/* =========================
+MENU
+========================= */
+.menu{
+list-style:none;
+margin-top:10px;
+}
+
+.menu li{
+margin-bottom:10px;
+}
+
+.menu a{
+display:flex;
+align-items:center;
+gap:10px;
+
+padding:12px 14px;
+border-radius:10px;
+
+color:white;
+text-decoration:none;
+
+transition:0.3s;
+}
+
+/* HOVER */
+.menu a:hover{
+background:rgba(255,255,255,0.1);
+transform:translateX(6px);
+}
+
+/* ACTIVO */
+.menu .active a{
+background:linear-gradient(45deg,var(--primary),var(--accent));
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* SALIR */
+.salir a{
+background:rgba(255,0,0,0.1);
+}
+
+.salir a:hover{
+background:var(--danger);
+}
+
+/* =========================
+CONTENIDO
+========================= */
+.contenido{
+margin-left:250px;
+padding:40px;
+width:calc(100% - 250px);
+}
+
+/* =========================
+TOPBAR
+========================= */
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:25px;
+}
+
+.topbar h1{
+font-size:26px;
+font-weight:600;
+}
+
+.sub{
+font-size:13px;
+color:var(--soft);
+}
+
+/* =========================
+BOTONES
+========================= */
+.btn-top{
+background:var(--primary);
+color:white;
+padding:10px 15px;
+border-radius:8px;
+text-decoration:none;
+font-size:14px;
+transition:0.3s;
+}
+
+.btn-top:hover{
+background:var(--accent);
+}
+
+.btn-top.verde{
+background:var(--success);
+}
+
+/* =========================
+FILTROS
+========================= */
+.filtros{
+background:var(--card);
+padding:15px;
+border-radius:12px;
+box-shadow:var(--shadow);
+
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+margin-bottom:20px;
+}
+
+.filtros input,
+.filtros select{
+padding:10px;
+border-radius:8px;
+border:1px solid #ddd;
+}
+
+/* BOTONES FILTRO */
+.btn{
+padding:10px 15px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-weight:500;
+}
+
+.buscar{
+background:var(--primary);
+color:white;
+}
+
+.limpiar{
+background:var(--danger);
+color:white;
+text-decoration:none;
+display:flex;
+align-items:center;
+}
+
+/* =========================
+TABLA
+========================= */
+.tabla-box{
+background:var(--card);
+padding:20px;
+border-radius:14px;
+box-shadow:var(--shadow);
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+thead{
+background:linear-gradient(45deg,var(--primary),var(--accent));
+color:white;
+}
+
+th,td{
+padding:12px;
+text-align:left;
+font-size:14px;
+}
+
+tbody tr{
+border-bottom:1px solid #eee;
+}
+
+tbody tr:hover{
+background:#f1f5f9;
+}
+
+/* =========================
+MONTO
+========================= */
+.monto{
+font-weight:600;
+color:var(--success);
+}
+
+/* =========================
+BADGES
+========================= */
+.badge{
+padding:5px 10px;
+border-radius:20px;
+font-size:12px;
+font-weight:500;
+}
+
+.badge.efectivo{
+background:#dcfce7;
+color:#16a34a;
+}
+
+.badge.transferencia{
+background:#dbeafe;
+color:#2563eb;
+}
+
+.badge.tarjeta{
+background:#fef3c7;
+color:#d97706;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+@media(max-width:900px){
+
+.sidebar{
+display:none;
+}
+
+.contenido{
+margin-left:0;
+width:100%;
+padding:20px;
+}
+
+}

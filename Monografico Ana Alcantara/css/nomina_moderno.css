@@ -1,0 +1,126 @@
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', sans-serif;
+}
+
+/* FONDO */
+body{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#031926,#0b3c5d);
+}
+
+/* CONTENEDOR */
+.contenedor{
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* GRID */
+.card-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+/* CARD */
+.card{
+width:360px;
+padding:30px;
+
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(15px);
+
+border-radius:15px;
+border:1px solid rgba(255,255,255,0.2);
+
+box-shadow:0 15px 35px rgba(0,0,0,0.3);
+
+color:white;
+}
+
+/* TITULOS */
+.card h2{
+text-align:center;
+margin-bottom:20px;
+color:#9DBEBB;
+}
+
+.card h3{
+margin-bottom:15px;
+color:#9DBEBB;
+}
+
+/* INPUT */
+.input-box{
+margin-bottom:15px;
+}
+
+.input-box input,
+.input-box select{
+width:100%;
+padding:12px;
+
+border:none;
+border-radius:10px;
+
+background:rgba(255,255,255,0.1);
+color:white;
+
+outline:none;
+}
+
+/* SELECT OPTION */
+.input-box select option{
+color:#000;
+}
+
+/* BOTON */
+.btn{
+width:100%;
+padding:12px;
+
+background:linear-gradient(45deg,#468189,#77ACA2);
+
+border:none;
+border-radius:25px;
+
+color:white;
+font-size:14px;
+cursor:pointer;
+
+transition:0.3s;
+}
+
+.btn:hover{
+transform:translateY(-2px);
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* INFO */
+.info p{
+margin-bottom:10px;
+}
+
+.info ul{
+padding-left:15px;
+}
+
+.info li{
+margin-bottom:6px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.card-grid{
+grid-template-columns:1fr;
+}
+}

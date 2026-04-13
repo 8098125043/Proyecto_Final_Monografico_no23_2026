@@ -1,0 +1,123 @@
+/* =========================
+RESET
+========================= */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', sans-serif;
+}
+
+/* =========================
+FONDO
+========================= */
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:#083b4c; /* azul oscuro limpio */
+}
+
+/* =========================
+CARD
+========================= */
+.form-box{
+width:380px;
+padding:40px;
+
+background:#0f4c5c;
+border-radius:15px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+
+text-align:center;
+}
+
+/* TITULO */
+.topbar h1{
+color:#cfe8e8;
+font-size:22px;
+margin-bottom:25px;
+}
+
+/* =========================
+INPUT GROUP
+========================= */
+.input-group{
+margin-bottom:25px;
+}
+
+/* INPUT */
+.input-group input{
+width:100%;
+padding:10px 5px;
+
+background:transparent;
+border:none;
+border-bottom:1px solid rgba(255,255,255,0.4);
+
+outline:none;
+
+color:white;
+font-size:14px;
+}
+
+/* PLACEHOLDER */
+.input-group input::placeholder{
+color:rgba(255,255,255,0.6);
+}
+
+/* FOCUS */
+.input-group input:focus{
+border-bottom:1px solid #77ACA2;
+}
+
+/* INPUT BLOQUEADO */
+.input-group input[readonly]{
+color:rgba(255,255,255,0.5);
+border-bottom:1px dashed rgba(255,255,255,0.3);
+cursor:not-allowed;
+}
+
+/* =========================
+BOTON
+========================= */
+.btn-group{
+margin-top:20px;
+}
+
+.btn-guardar{
+width:100%;
+padding:12px;
+
+border:none;
+border-radius:25px;
+
+background:linear-gradient(90deg,#77ACA2,#9DBEBB);
+color:#031926;
+
+font-weight:bold;
+cursor:pointer;
+
+transition:0.3s;
+}
+
+.btn-guardar:hover{
+transform:scale(1.03);
+}
+
+/* BOTON VOLVER */
+.btn-volver{
+display:block;
+margin-top:10px;
+
+text-decoration:none;
+color:#cfe8e8;
+font-size:13px;
+}
+
+.btn-volver:hover{
+text-decoration:underline;
+}

@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg: #eef2f6;
+    --card: #ffffff;
+    --text: #1f2937;
+    --soft: #6b7280;
+    --primary: #468189;
+    --accent: #77ACA2;
+    --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+body {
+    background: linear-gradient(135deg, #eef2f6, #e3e9ee);
+}
+
+.layout {
+    display: flex;
+}
+
+/* CONTENIDO */
+.contenido {
+    margin-left: 240px;
+    padding: 40px;
+    width: calc(100% - 240px);
+}
+
+/* TOPBAR */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.topbar h1 {
+    font-size: 26px;
+}
+
+.sub {
+    font-size: 13px;
+    color: var(--soft);
+}
+
+/* BOTONES */
+.btn-top {
+    background: var(--primary);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-top:hover {
+    background: var(--accent);
+}
+
+.btn-top.verde {
+    background: #16a34a;
+}
+
+/* FILTROS */
+.filtros {
+    background: var(--card);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.filtros input,
+.filtros select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.buscar {
+    background: var(--primary);
+    color: white;
+}
+
+.limpiar {
+    background: #ef4444;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* TABLA */
+.tabla-box {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: linear-gradient(45deg, var(--primary), var(--accent));
+    color: white;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+    background: #f1f5f9;
+}
+
+.monto {
+    font-weight: 600;
+    color: #16a34a;
+}
+
+/* BADGES */
+.badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.badge.efectivo {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.badge.transferencia {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.badge.tarjeta {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+/* NO DATA */
+.no-data {
+    text-align: center;
+    padding: 20px;
+    color: #ef4444;
+    font-weight: bold;
+}

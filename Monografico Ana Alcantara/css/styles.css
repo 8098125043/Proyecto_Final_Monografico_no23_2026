@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Playwrite+CZ:wght@100..400&display=swap');
+
+:root {
+    --azul-oscuro: #031926;
+    --azul-verde: #5c8d94;
+    --verde-suave: #296382;
+    --verde-claro: #659793;
+    --beige: #F4E9CD;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Segoe UI, sans-serif;
+}
+
+
+
+
+body {
+    height: 100vh;
+    background: var(--azul-oscuro);
+}
+
+
+/* CONTENEDOR PRINCIPAL */
+
+.login-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* PANEL IZQUIERDO (IMAGEN) */
+
+.left-panel {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    color: white;
+    text-align: left;
+
+    /* IMAGEN + DEGRADADO */
+
+    background-image:
+        linear-gradient(rgba(3, 25, 38, 0.148),
+            rgba(70, 129, 137, 0.159)),
+        url("../IMG/image.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* CONTENIDO TEXTO IZQUIERDO */
+
+.left-content {
+    max-width: 420px;
+    
+}
+
+
+/* .left-content h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 2px 3px 0 black;
+    
+    
+}
+
+.left-content p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    line-height: 1.6;
+    color: var(--beige);
+} */
+
+
+/* PANEL DERECHO */
+
+
+.right-panel {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg,
+            var(--azul-oscuro),
+            var(--azul-verde));
+
+           
+}
+
+
+/* CAJA LOGIN */
+
+.login-box {
+    width: 450px;
+    height: 400px;
+    padding: 40px;
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(10px);
+
+    box-shadow: 3px 10px 30px rgba(0, 0, 0, 0.3);
+
+    color: white;
+}
+
+
+/* TITULO */
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    font-size: 26px;
+}
+
+
+/* FORMULARIO */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 17px;
+    color: var(--verde-claro);
+    font-family: "Playwrite CZ";
+}
+
+
+/* INPUTS */
+
+.form-group input {
+    width: 100%;
+    padding: 10px 15px;
+
+    border: none;
+    border-bottom: 3px solid var(--verde-claro);
+
+    background: transparent;
+color: antiquewhite;
+    outline: none;
+
+    font-size: 17px;
+}
+
+.form-group input::placeholder {
+    color: white;
+    font-size: 15px;
+
+}
+
+
+/* BOTON LOGIN */
+
+.login-btn {
+
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 25px;
+
+    background: var(--verde-suave);
+
+    color: ghostwhite;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    margin-top: 10px;
+    font-size: 15px;
+
+}
+
+
+/* EFECTO HOVER */
+
+.login-btn:hover {
+
+    background: var(--verde-claro);
+
+    transform: scale(1.03);
+    cursor: pointer;
+
+}
+
+.crearL a{
+    text-decoration: none;
+    color: ghostwhite;
+}
+
+.crearL a:hover{
+    color: var(--azul-oscuro);
+   font-size: 18px;
+   text-decoration: underline;
+}

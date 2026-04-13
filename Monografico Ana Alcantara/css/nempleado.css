@@ -1,0 +1,198 @@
+/* =========================
+PALETA
+========================= */
+:root{
+--azul-oscuro:#031926;
+--azul-verde:#468189;
+--verde-suave:#77ACA2;
+--verde-claro:#9DBEBB;
+--blanco:#ffffff;
+}
+
+
+/* =========================
+RESET
+========================= */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', sans-serif;
+}
+
+
+/* =========================
+FONDO
+========================= */
+body{
+min-height:100vh; /* 🔥 evita desbordes */
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#031926,#0b3c5d);
+padding:20px;
+}
+
+
+/* =========================
+CONTENEDOR
+========================= */
+.contenedor{
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+
+/* =========================
+CARD (FORM)
+========================= */
+.card-empleado{
+
+width:420px;
+max-height:90vh; /* 🔥 evita que se salga */
+overflow-y:auto; /* 🔥 scroll interno */
+
+padding:40px;
+
+background:rgba(70,129,137,0.25);
+backdrop-filter:blur(15px);
+
+border-radius:15px;
+border:1px solid rgba(255,255,255,0.2);
+
+box-shadow:0 12px 30px rgba(0,0,0,0.35);
+
+color:white;
+}
+
+
+/* SCROLL BONITO */
+.card-empleado::-webkit-scrollbar{
+width:6px;
+}
+
+.card-empleado::-webkit-scrollbar-thumb{
+background:var(--verde-claro);
+border-radius:10px;
+}
+
+
+/* =========================
+TITULO
+========================= */
+.card-empleado h2{
+text-align:center;
+margin-bottom:25px;
+font-weight:500;
+color:var(--verde-claro);
+}
+
+
+/* =========================
+INPUT BOX
+========================= */
+.input-box{
+margin-bottom:20px;
+}
+
+
+/* =========================
+INPUTS
+========================= */
+.input-box input{
+width:100%;
+padding:14px 14px;
+
+background:rgba(255,255,255,0.05);
+border:none;
+border-bottom:2px solid rgba(255,255,255,0.4);
+
+outline:none;
+color:white;
+font-size:14px;
+border-radius:8px;
+
+transition:0.3s;
+}
+
+
+/* PLACEHOLDER */
+.input-box input::placeholder{
+color:rgba(255,255,255,0.6);
+}
+
+
+/* =========================
+SELECT
+========================= */
+.input-box select{
+width:100%;
+padding:14px 14px;
+
+background:rgba(255,255,255,0.05);
+border:none;
+border-bottom:2px solid rgba(255,255,255,0.4);
+
+outline:none;
+color:white;
+font-size:14px;
+border-radius:8px;
+
+appearance:none;
+cursor:pointer;
+}
+
+
+/* =========================
+FOCUS
+========================= */
+.input-box input:focus,
+.input-box select:focus{
+border-bottom:2px solid var(--verde-claro);
+background:rgba(255,255,255,0.08);
+}
+
+
+/* =========================
+READONLY
+========================= */
+.input-box input[readonly]{
+color:rgba(255,255,255,0.5);
+border-bottom:1px dashed rgba(255,255,255,0.3);
+}
+
+
+/* =========================
+BOTON
+========================= */
+.btn-guardar{
+width:100%;
+padding:14px;
+
+background:linear-gradient(45deg,var(--azul-verde),var(--verde-suave));
+border:none;
+
+color:white;
+border-radius:25px;
+
+cursor:pointer;
+font-size:15px;
+transition:0.3s;
+}
+
+.btn-guardar:hover{
+transform:translateY(-2px);
+background:linear-gradient(45deg,var(--verde-suave),var(--verde-claro));
+box-shadow:0 6px 18px rgba(0,0,0,0.3);
+}
+
+
+/* =========================
+HOVER INPUTS (EXTRA PRO)
+========================= */
+.input-box input:hover,
+.input-box select:hover{
+background:rgba(255,255,255,0.07);
+}

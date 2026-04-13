@@ -1,0 +1,116 @@
+
+/* =========================
+RESET
+========================= */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', sans-serif;
+}
+
+/* =========================
+FONDO
+========================= */
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#031926,#0b3c5d);
+}
+
+/* =========================
+CONTENEDOR
+========================= */
+.contenedor{
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* =========================
+CARD (GLASS)
+========================= */
+.card{
+width:380px;
+padding:40px;
+
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(15px);
+
+border-radius:15px;
+border:1px solid rgba(255,255,255,0.2);
+
+box-shadow:0 15px 35px rgba(0,0,0,0.3);
+
+color:white;
+text-align:center;
+}
+
+/* =========================
+TITULO
+========================= */
+.card h2{
+margin-bottom:30px;
+color:#9DBEBB;
+}
+
+/* =========================
+INPUTS
+========================= */
+.input-box{
+margin-bottom:20px;
+}
+
+.input-box select{
+width:100%;
+padding:14px;
+
+border:none;
+border-radius:10px;
+
+background:rgba(255,255,255,0.1);
+color:white;
+
+font-size:14px;
+outline:none;
+cursor:pointer;
+}
+
+/* OPCIONES */
+.input-box select option{
+color:#000;
+}
+
+/* =========================
+FOCUS
+========================= */
+.input-box select:focus{
+box-shadow:0 0 10px rgba(119,172,162,0.6);
+}
+
+/* =========================
+BOTON
+========================= */
+.btn{
+width:100%;
+padding:14px;
+
+background:linear-gradient(45deg,#468189,#77ACA2);
+
+border:none;
+border-radius:25px;
+
+color:white;
+font-size:15px;
+cursor:pointer;
+
+transition:0.3s;
+}
+
+.btn:hover{
+transform:translateY(-2px);
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}

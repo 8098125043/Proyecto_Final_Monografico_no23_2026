@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #031926, #0b3c5d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* TARJETA */
+.recibo {
+    width: 420px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+
+
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(135deg, #468189, #77ACA2);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h2 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.header span {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+/* CONTENIDO */
+.content {
+    padding: 25px;
+}
+
+/* INFO */
+.info p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+/* DIVISOR */
+.divider {
+    margin: 15px 0;
+    height: 1px;
+    background: #eee;
+}
+
+/* DETALLE */
+.detalle div {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+/* TOTAL */
+.total {
+    margin-top: 15px;
+    padding: 12px;
+    background: #f4f6f9;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 16px;
+    color: #031926;
+}
+
+/* BOTON */
+.btn {
+    margin: 20px;
+    width: calc(100% - 40px);
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #468189, #77ACA2);
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+}
+
+/* PRINT */
+@media print {
+    body {
+        background: white;
+    }
+
+    .btn {
+        display: none;
+    }
+}

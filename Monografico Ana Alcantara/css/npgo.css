@@ -1,0 +1,112 @@
+:root{
+--azul-oscuro:#031926;
+--azul-verde:#468189;
+--verde-suave:#77ACA2;
+--verde-claro:#9DBEBB;
+}
+
+/* FONDO */
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background: linear-gradient(120deg,#031926,#062c40);
+font-family: 'Segoe UI', sans-serif;
+}
+
+/* CARD */
+.card-form{
+background: rgba(255,255,255,0.05);
+padding:40px;
+border-radius:12px;
+width:350px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+backdrop-filter: blur(10px);
+}
+
+/* TITULO */
+.card-form h2{
+text-align:center;
+color:#cfe8e8;
+margin-bottom:30px;
+}
+
+/* INPUT LINE */
+.input-line{
+position:relative;
+margin-bottom:25px;
+}
+
+/* INPUT Y SELECT */
+.input-line input,
+.input-line select{
+width:100%;
+border:none;
+border-bottom:2px solid rgba(255,255,255,0.3);
+background:transparent;
+padding:8px 0;
+color:white;
+font-size:14px;
+outline:none;
+appearance:none;
+}
+
+/* LABEL */
+.input-line label{
+position:absolute;
+top:8px;
+left:0;
+color:#9DBEBB;
+font-size:13px;
+transition:0.3s;
+}
+
+/* ANIMACION */
+.input-line input:focus ~ label,
+.input-line input:valid ~ label,
+.input-line select:focus ~ label,
+.input-line select:valid ~ label{
+top:-12px;
+font-size:11px;
+color:#77ACA2;
+}
+
+/* FOCUS */
+.input-line input:focus,
+.input-line select:focus{
+border-bottom:2px solid #77ACA2;
+}
+
+/* BOTON */
+.btn-guardar{
+width:100%;
+padding:12px;
+margin-top:10px;
+border:none;
+border-radius:25px;
+background:linear-gradient(90deg,#77ACA2,#9DBEBB);
+color:#031926;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn-guardar:hover{
+transform:scale(1.05);
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* .input-line select{
+    background-color: #031926; /* azul oscuro del sistema 
+    color: #ffffff;
+} 
+
+*/
+
+.input-line select option{
+    background-color: #031926;
+    color: #ffffff;
+    padding: 10px;
+}
